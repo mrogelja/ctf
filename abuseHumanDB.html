@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      async function getFlag(){
+        try{
+            const page = await fetch("https://zzzzz.free.beeceptor.com", {
+              headers: {
+                "ngrok-skip-browser-warning": "fddf"
+              }
+            }).json()
+
+              c.innerText = JSON.stringify(page);
+        }
+        catch(e){
+          c.innerText = e.message;
+        }
+      }
+
+    </script>
+
+    <div id="c"/>
+  </body>
+</html>
